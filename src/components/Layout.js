@@ -10,7 +10,7 @@ import PopContact from '../components/PopContact'
 // import 'typeface-hammersmith-one'
 // import 'typeface-fredericka-the-great'
 // import 'typeface-amatic-sc'
-
+// import { withPrefix } from "gatsby"
 import "../css/index.scss"
 import Consent from '../components/Consent'
 
@@ -45,7 +45,7 @@ const TemplateWrapper = ({ children }) => {
         <html lang="en" />
         <title>{config.siteTitle}</title>
           <meta name='description' content={config.siteDescription} />
-
+          <script src={withPrefix('script.js')} type="text/javascript" />
         
 
         <meta property="og:type" content="business.business" />

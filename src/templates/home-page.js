@@ -16,9 +16,9 @@ import { navigate } from 'gatsby';
 
 const HomePage = ({ data }) => {
 
-  useEffect(() => {
-    navigate('/shop/');
-  }, []);
+  // useEffect(() => {
+  //   navigate('/shop/');
+  // }, []);
 
   
   const { frontmatter } = data.markdownRemark

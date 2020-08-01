@@ -1,9 +1,10 @@
 import React from 'react'
 // import SearchBox from '../components/SearchBox'
-import logo from '../../../img/dressupchef-logo.svg'
+import logo from '../img/pb-logo-color.png'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-import Install from '../../../components/Install'
+
+import Install from '../components/Install'
 
 import { MdShoppingCart } from 'react-icons/md'
 import { GoArrowUp, GoTelescope } from 'react-icons/go'
@@ -11,7 +12,6 @@ import { GoGear } from 'react-icons/go'
 // import { FaQuestionCircle } from 'react-icons/fa'
 // import { AiFillBank } from 'react-icons/ai'
 import { FaRegAddressCard, FaTelegramPlane, FaSearch, FaTimesCircle } from 'react-icons/fa'
-import CookieConsent from "react-cookie-consent"
 
 // import PopContact from '../components/PopContact'
 // import ScrollAnimation from 'react-animate-on-scroll'
@@ -132,41 +132,20 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 
 
 
-	    
+	  
     <> 
-    <CustomBox>  
-<Install />
-      <CookieConsent
-	debug={false}
-	location="bottom"
-	style={{ background: "#222", zIndex:'100000000', padding:'10px 3% 0% 3%', opacity:'.8', }}
-	enableDeclineButton={false}
-	declineButtonText="No Cookies"
-    declineButtonStyle={{ color: "#fff", background: "#666", fontSize: "13px", }}
-    
-    buttonText="Accept"
-	buttonStyle={{ color: "#333", justifyContent:'center', textAlign:'center', background: "#eee", fontSize: "13px", fontWeight:'bold', borderRadius:'5px', padding:'.5rem 1rem', margin:'10px auto 30px auto', top:'10px',  position:'relative', }}
-
-    expires={30}
-    cookieName="Twilightscapes.com-site-pref-cookie"
->
-
-    <div style={{ padding:'0 0 0 0', fontSize:'90%', textAlign:'center',}}> We use cookies to optimize our website.{" "}<br />
-    <span style={{ fontSize: "75%" }}>
-   <a href="/privacy/" style={{color:'#fff',}}>Do Not Sell My Personal Information</a> | <a href="/privacy/" style={{color:'#fff',}}>Privacy Policy</a>
-    </span><br /><br /></div>
-    
-</CookieConsent> 
-
-
+    <Install />
+    <CustomBox>     
 <Headroom style={{ zIndex: '5', }}>
+
+
+
+
+
     <header className="header" style={{position:'relative',}}>
     
-
-    
     <Link to="/" className="logolink" title="Logo - Back To Home">
-    <img className="logo" src={logo} alt="Dress Up Chef Logo" />
-    {/* Loves<br />Laura */}
+    <img className="logo" src={logo} alt="Pav &amp; Broome Logo" />
     </Link>
    
    
@@ -178,24 +157,53 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 
 <ul id="menu" className="menu">
             
+            
+              
+            
+<li className="grad" style={{position:'relative',}}>
+            <Link className="navbar-item" to="/custom" style={{paddingRight:'',}}>
+              Collections
+            </Link>
+            </li>
+
 
 <li className="grad" style={{position:'relative',}}>
-            <Link className="navbar-item" to="/shop/collection/dress-up-chef" style={{paddingRight:'',}}>
-              Current Stock
+            <Link className="navbar-item" to="/jewelry/" style={{paddingRight:'',}}>
+              Jewelry
             </Link>
 </li>
 
 
-<li className="grad" style={{position:'relative',}}>
-            <Link className="navbar-item" to="/custom" style={{paddingRight:'',}}>
-              Custom Orders
-            </Link>
-            </li>
+
 
 
             <li className="grad" style={{position:'relative',}}>
-            <Link className="navbar-item" to="/aboutus" style={{paddingRight:'',}}>
-              About
+            <Link className="navbar-item" to="#" style={{paddingRight:'',}}>
+              Bridal
+            </Link>
+            </li>
+
+            <li className="grad" style={{position:'relative',}}>
+            <Link className="navbar-item" to="#" style={{paddingRight:'',}}>
+              Watches
+            </Link>
+            </li>
+
+            <li className="grad" style={{position:'relative',}}>
+            <Link className="navbar-item" to="#" style={{paddingRight:'',}}>
+              Gifts
+            </Link>
+            </li>
+
+            <li className="grad" style={{position:'relative',}}>
+            <Link className="navbar-item" to="#" style={{paddingRight:'',}}>
+              Services
+            </Link>
+            </li>
+
+            <li className="grad" style={{position:'relative',}}>
+            <Link className="navbar-item" to="#" style={{paddingRight:'',}}>
+              Education
             </Link>
             </li>
 
@@ -203,16 +211,16 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 
 
 <li className="grad" style={{position:'relative',}}>
-            <Link className="navbar-item" to="/shop/cart" style={{paddingRight:'',}}>
+            <Link className="navbar-item" to="/jewelry/cart" style={{paddingRight:'',}}>
             <MdShoppingCart style={{fontSize:'130%'}} />
             </Link>
 </li>
 
-{/* <li style={{display:'',}}>
+<li style={{display:'',}}>
              
              <label className="modal-btn grad" htmlFor="semitoggle" style={{position:'relative', textShadow: '1px 2px 0px black', paddingRight:'8px',}}> <FaSearch className="contact-icon txtshadow" style={{fontSize:'23px', position:'relative', right:'', top:'10px',}}/></label> 
              
-              </li> */}
+              </li>
 
 
             </ul>

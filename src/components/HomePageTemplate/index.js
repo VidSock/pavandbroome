@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import logo from '../../img/dressupchef-logo-vert.svg'
+import logo from '../../img/pb-logo-color.png'
 // import Install from '../Install'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
@@ -15,7 +15,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 // import ArticleTemplate from '../ArticleTemplate'
 // import { Link } from 'gatsby'
 import styled from 'styled-components'
-// import Intro1 from '../Intro1'
+// import Intro1 from '../Intgatro1'
 // import Intro2 from '../Intro2'
 // import Intro3 from '../Intro3'
 
@@ -115,7 +115,7 @@ const HomePageTemplate = ({
  <ScrollAnimation animateIn="fadeIn" delay={100} offset={0} style={{position:'relative', paddingTop:'5%', overflow:'hidden', width:'100%', display:'flex', justifyContent:'center', verticalAlign:'center', alignContent:'center', alignItems: 'center',}}>
   
   <div className="container innerpanel" style={{padding:'1rem', backgroundColor:'#fff', width:'50%', borderRadius:'10px', filter:'blur(0px)',}}>
-     <img className="logo" src={logo} alt="Pick 6 Logo" style={{maxHeight:'300px'}} />
+     <img className="logo" src={logo} alt="Pav and Broome Logo" style={{maxHeight:'300px'}} />
      </div>
     </ScrollAnimation>
 <br /><br /><br /><br /><br />

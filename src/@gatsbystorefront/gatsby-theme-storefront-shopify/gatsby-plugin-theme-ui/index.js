@@ -4,7 +4,7 @@ const colors = {
   darkHighlight: '#dd2c00',
 
   text: '#000',
-  background: '#fff',
+  background: 'inherit',
   backgroundFooter: '#f8f8f8',
   primary: '#333',
   secondary: '#77e3da',

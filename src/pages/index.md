@@ -19,7 +19,7 @@ offerings:
 testimonials:
   - author: aa
     quote: aa
-meta_title: Dress Up Chef - Unique homemade dress shirt kitchen aprons
-meta_description: 'Custom designer aprons that are totally unique and handmade in the USA.'
+meta_title: Pav & Broome Fine Jewelry - Where the Coast gets engaged
+meta_description: 'Pav & Broome Fine Jewelry - Where the Coast gets engaged'
 ---
 

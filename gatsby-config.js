@@ -56,12 +56,12 @@ module.exports = {
         'Facebook',
         'Pinterest',
         'Twitter',
-        'Tumblr',
-        'Whatsapp',
-        'Line',
-        'Viber',
+        // 'Tumblr',
+        // 'Whatsapp',
+        // 'Line',
+        // 'Viber',
       ],
-      googleAnalyticsId: 'UA-49869143-3',
+      googleAnalyticsId: 'UA-49869143-33',
       //
       // carousel, collection, product
       //
@@ -72,7 +72,7 @@ module.exports = {
             {
               name: 'intro',
               type: 'collection',
-              handle: 'dress-up-chef',
+              handle: 'diamonds',
               textColor: 'white',
               textBgColor: 'black',
             },
@@ -150,77 +150,216 @@ module.exports = {
           textBgColor: 'primary',
         },
       ],
+
+
+
+
+
+
+
       // Menu types: "header", "collection", "product", "link"
       menu: flattenMenu({
         name: 'Menu',
         type: 'top',
         children: [
+
+
           {
-            name: "Women's",
+            name: "Collections",
             type: 'header',
             handle: '',
             link: '',
             children: [
               {
-                name: 'Apparel',
-                type: 'collection',
+                name: 'A. Jaffe',
+                type: 'link',
                 handle: 'apparel',
+                link: '/ajaffe'
               },
               {
-                name: 'Jewelery',
-                type: 'collection',
-                handle: 'jewelery',
+                name: 'Benchmark',
+                type: 'link',
+                link: '/benchmark',
               },
               {
-                name: 'One product',
-                type: 'product',
-                handle: 'red-sports-tee',
+                name: 'Facet Barcelona',
+                type: 'link',
+                link: '/facet',
               },
             ],
           },
+
+
           {
-            name: "Men's",
+            name: "Jewelry",
             type: 'header',
+            handle: '',
+            link: '',
             children: [
               {
-                name: 'Test',
-                type: 'collection',
-                handle: 'test-collection',
-              },
-              {
-                name: 'Garden',
-                type: 'collection',
-                handle: 'garden',
-              },
-              {
-                name: 'Apparel',
-                type: 'collection',
+                name: 'A. Jaffe',
+                type: 'link',
                 handle: 'apparel',
+                link: '/ajaffe'
               },
               {
-                name: 'External links',
-                type: 'header',
-                children: [
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                ],
+                name: 'Benchmark',
+                type: 'link',
+                link: '/benchmark',
+              },
+              {
+                name: 'Facet Barcelona',
+                type: 'link',
+                link: '/facet',
               },
             ],
           },
-          { name: 'Blog', type: 'blog', handle: '' },
+
+
+
+          {
+            name: "Watches",
+            type: 'header',
+            handle: '',
+            link: '',
+            children: [
+              {
+                name: 'A. Jaffe',
+                type: 'link',
+                handle: 'apparel',
+                link: '/ajaffe'
+              },
+              {
+                name: 'Benchmark',
+                type: 'link',
+                link: '/benchmark',
+              },
+              {
+                name: 'Facet Barcelona',
+                type: 'link',
+                link: '/facet',
+              },
+            ],
+          },
+
+
+          
+          { name: 'Rolex', type: 'header', link: '/rolex' },
+
+
+
+          {
+            name: "Bridal",
+            type: 'header',
+            handle: '',
+            link: '',
+            children: [
+              {
+                name: 'A. Jaffe',
+                type: 'link',
+                handle: 'apparel',
+                link: '/ajaffe'
+              },
+              {
+                name: 'Benchmark',
+                type: 'link',
+                link: '/benchmark',
+              },
+              {
+                name: 'Facet Barcelona',
+                type: 'link',
+                link: '/facet',
+              },
+            ],
+          },
+
+
+
+
+          {
+            name: "Gifts",
+            type: 'header',
+            handle: '',
+            link: '',
+            children: [
+              {
+                name: 'A. Jaffe',
+                type: 'link',
+                handle: 'apparel',
+                link: '/ajaffe'
+              },
+              {
+                name: 'Benchmark',
+                type: 'link',
+                link: '/benchmark',
+              },
+              {
+                name: 'Facet Barcelona',
+                type: 'link',
+                link: '/facet',
+              },
+            ],
+          },
+
+
+
+
+          {
+            name: "Services",
+            type: 'header',
+            handle: '',
+            link: '',
+            children: [
+              {
+                name: 'A. Jaffe',
+                type: 'link',
+                handle: 'apparel',
+                link: '/ajaffe'
+              },
+              {
+                name: 'Benchmark',
+                type: 'link',
+                link: '/benchmark',
+              },
+              {
+                name: 'Facet Barcelona',
+                type: 'link',
+                link: '/facet',
+              },
+            ],
+          },
+
+
+
+          {
+            name: "Education",
+            type: 'header',
+            handle: '',
+            link: '',
+            children: [
+              {
+                name: 'A. Jaffe',
+                type: 'link',
+                handle: 'apparel',
+                link: '/ajaffe'
+              },
+              {
+                name: 'Benchmark',
+                type: 'link',
+                link: '/benchmark',
+              },
+              {
+                name: 'Facet Barcelona',
+                type: 'link',
+                link: '/facet',
+              },
+            ],
+          },
+
+
+       
+
+
         ],
       }),
       footerLinks: [
@@ -301,7 +440,7 @@ module.exports = {
     options: {
       shopName: process.env.GATSBY_SHOP_NAME,
       accessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
-      basePath: '/shop',
+      basePath: '/jewelry',
       shopifyLite: true, // default 'false'
       enableWebp: true, // default 'true'
       imageQuality: '55', // default '95', better to decrease but always check your result images quality

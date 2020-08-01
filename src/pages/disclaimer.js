@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 const Disclaimer = () => (
   <Layout>
     <section className="outer section section--gradient">
-      <div className="container" style={{padding: '2rem'}}>
+      <div className="container" style={{marginTop:'80px', padding: '2rem'}}>
       <h1>Disclaimer</h1>
     
 
