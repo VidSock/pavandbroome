@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 import { Flex, Box, Text } from 'rebass';
 import { Helmet } from 'react-helmet';
 
-import strings from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/strings';
-import substrDescription from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/utils/substrDescription.js';
-import shortcodeParser from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/utils/shortcode-parser';
-import ProductCounter from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/ProductCounter';
-import Payments from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/Payments';
-import ShareButtons from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/ShareButtons';
-import Divider from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/Divider';
-import Breadcrumbs from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/Breadcrumbs';
-import ProductGalleryCurrentImage from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductGalleryCurrentImage';
-import ProductGalleryThumbnails from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductGalleryThumbnails';
-import { CurrentVariantContextProvider } from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/CurrentVariantContext';
-import { CurrentImageContextProvider } from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/CurrentImageContext';
-import DescriptionBox from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/DescriptionBox';
-import ProductVariantSelector from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantSelector';
-import ProductVariantAddToCart from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantAddToCart';
-import ProductVariantPrice from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantPrice';
-import ProductVariantSku from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantSku';
+import strings from './strings';
+import substrDescription from '../../utils/substrDescription.js';
+import shortcodeParser from '../../utils/shortcode-parser';
+import ProductCounter from '../../components/ProductCounter';
+import Payments from '../../components/Payments';
+import ShareButtons from '../../components/ShareButtons';
+import Divider from '../../components/Divider';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import ProductGalleryCurrentImage from './ProductGalleryCurrentImage';
+import ProductGalleryThumbnails from './ProductGalleryThumbnails';
+import { CurrentVariantContextProvider } from './CurrentVariantContext';
+import { CurrentImageContextProvider } from './CurrentImageContext';
+import DescriptionBox from './DescriptionBox';
+import ProductVariantSelector from './ProductVariantSelector';
+import ProductVariantAddToCart from './ProductVariantAddToCart';
+import ProductVariantPrice from './ProductVariantPrice';
+import ProductVariantSku from './ProductVariantSku';
 
 const {
   productQuantityLabel,
@@ -155,21 +155,18 @@ function ProductPage({ data, pageContext, location }) {
             order={3}
           >
             {/* Breadcrumbs block 2 for desktop */}
-            {/* <Box sx={{ display: ['none', 'none', 'block'] }} pt={1}>
+            <Box sx={{ display: ['none', 'none', 'block'] }} pt={1}>
               <Breadcrumbs
                 productTitle={title}
                 collectionTitle={collectionTitle}
                 collectionPath={collectionPath}
                 separator="/"
               />
-            </Box> */}
-            
+            </Box>
             <Box>
               <Text as="h1" mb={3} data-title-box>
                 {title}
               </Text>
-
-
               <ProductVariantPrice
                 initialDisplayPrice={variants[0].price}
                 mb={3}
@@ -185,24 +182,6 @@ function ProductPage({ data, pageContext, location }) {
               )}
             </Box>
 
-            <Flex
-          pt={3}
-          px={4}
-          mx="auto"
-          style={{ maxWidth: 1300 }}
-          fontFamily="body"
-        >
-          <Box width={1}>
-            
-            <DescriptionBox
-              pt={3}
-              source={withoutShortDescription}
-              escapeHtml={false}
-            />
-            
-          </Box>
-        </Flex>
-
             <ProductVariantSelector
               variants={variants}
               options={options}
@@ -210,7 +189,7 @@ function ProductPage({ data, pageContext, location }) {
               mb={4}
             />
 
-            {/* <Flex alignItems="center" mb={4}>
+            <Flex alignItems="center" mb={4}>
               <Box mr={2}>
                 <Text>{productQuantityLabel}</Text>
               </Box>
@@ -221,7 +200,7 @@ function ProductPage({ data, pageContext, location }) {
                   currentAmount={currentAmount}
                 />
               </Box>
-            </Flex> */}
+            </Flex>
 
             <Flex mb={4}>
               <Box>
@@ -243,7 +222,7 @@ function ProductPage({ data, pageContext, location }) {
 
             <ProductVariantSku />
 
-            {/* {vendor ? (
+            {vendor ? (
               <Flex mb={4}>
                 <Box mr={2}>
                   <Text>{vendorLabel}</Text>
@@ -252,7 +231,7 @@ function ProductPage({ data, pageContext, location }) {
               </Flex>
             ) : (
               ''
-            )} */}
+            )}
 
             {productType ? (
               <Flex mb={4}>
@@ -276,7 +255,7 @@ function ProductPage({ data, pageContext, location }) {
           </Flex>
         </Flex>
 
-        {/* <Flex
+        <Flex
           pt={3}
           px={4}
           mx="auto"
@@ -291,7 +270,7 @@ function ProductPage({ data, pageContext, location }) {
               escapeHtml={false}
             />
           </Box>
-        </Flex> */}
+        </Flex>
       </CurrentImageContextProvider>
     </CurrentVariantContextProvider>
   );
